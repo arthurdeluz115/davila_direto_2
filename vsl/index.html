@@ -19,7 +19,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/players/6ac16b2e946da87861f6941f/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/ab-test/6a3e063319ad0024febe808e/player.js" as="script">
 <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
 <link rel="dns-prefetch" href="https://cdn.converteai.net">
 <link rel="dns-prefetch" href="https://scripts.converteai.net">
@@ -298,7 +298,7 @@ body{
 <main class="vsl-wrap">
 
   <div class="vsl-player">
-    <vturb-smartplayer id="vid-6ac16b2e946da87861f6941f" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+    <vturb-smartplayer id="ab-6a3e063319ad0024febe808e" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
 
     <div class="ao-vivo" aria-live="off">
       <span class="ao-vivo-ponto" aria-hidden="true"></span>
@@ -339,7 +339,7 @@ body{
 
 const CONFIG = {
   checkoutUrl: 'https://app.ephra.io/checkout/5do1xf2',
-  vslPlayerUrl: 'https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/players/6ac16b2e946da87861f6941f/v4/player.js'
+  vslPlayerUrl: 'https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/ab-test/6a3e063319ad0024febe808e/player.js'
 };
 
 const s = document.createElement('script');
@@ -424,7 +424,7 @@ const CONTADORES = {
   const C = CONTADORES;
   const log = (...a) => { if (C.debug) console.log('[contadores]', ...a); };
 
-  const elPlayer   = document.getElementById('vid-6ac16b2e946da87861f6941f');
+  const elPlayer   = document.getElementById('ab-6a3e063319ad0024febe808e');
   const elAoVivo   = document.getElementById('aoVivoNumero');
   const elVagas    = document.getElementById('vagas');
   const elVagasNum = document.getElementById('vagasNumero');
@@ -641,7 +641,7 @@ const CONTADORES = {
     if (!base.width) return;
 
     if (!videoEl || !videoEl.isConnected){
-      videoEl = acharVideo(elPlayer.shadowRoot) || acharVideo(elPlayer);
+      videoEl = acharVideo(elPlayer.shadowRoot) || acharVideo(elPlayer) || acharVideo(elWrapPlayer);
       if (videoEl) log('vídeo encontrado dentro do player');
     }
 
@@ -721,15 +721,25 @@ const CONTADORES = {
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !elBrOverlay.hidden) fecharPopupBack(); });
 
   /* ---------- conexão com o player do vturb ---------- */
+  // No teste A/B o vturb pode criar um player interno com outro id,
+  // então além do elemento principal também procuramos qualquer
+  // <vturb-smartplayer> dentro do container e as instâncias globais.
   let conectado = false;
+
+  function acharInstancia(){
+    if (elPlayer && typeof elPlayer.on === 'function') return elPlayer;
+    const internos = elWrapPlayer.querySelectorAll('vturb-smartplayer');
+    for (let i = 0; i < internos.length; i++){
+      if (typeof internos[i].on === 'function') return internos[i];
+    }
+    if (window.smartplayer && window.smartplayer.instances && window.smartplayer.instances[0]) return window.smartplayer.instances[0];
+    return null;
+  }
 
   function conectar(){
     if (conectado) return true;
 
-    let inst = null;
-    if (elPlayer && typeof elPlayer.on === 'function') inst = elPlayer;
-    else if (window.smartplayer && window.smartplayer.instances && window.smartplayer.instances[0]) inst = window.smartplayer.instances[0];
-
+    const inst = acharInstancia();
     if (!inst || typeof inst.on !== 'function') return false;
 
     inst.on('timeupdate', aoTimeupdate);
@@ -743,6 +753,7 @@ const CONTADORES = {
   }
 
   elPlayer.addEventListener('player:ready', conectar);
+  document.addEventListener('player:ready', conectar);
 
   let tentativas = 0;
   const poll = setInterval(() => {
