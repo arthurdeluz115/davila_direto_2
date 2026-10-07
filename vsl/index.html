@@ -384,17 +384,17 @@ window.irParaCheckout = irParaCheckout;
  * ============================================================ */
 const CONTADORES = {
   debug: false,                 // true = mostra logs no console para testar
-  duracaoVideo: 1200,           // duração do vídeo: 20:00 (20*60)
-  pitchInicio: 980,             // pitch começa em 16:20 (16*60 + 20)
+  duracaoVideo: 1434,           // duração do vídeo: 23:54 (23*60 + 54)
+  pitchInicio: 1177,            // pitch começa em 19:37 (19*60 + 37)
   pitchFim: null,               // null = vagas chegam a 04 no fim do vídeo
 
   proporcaoVideo: 16 / 9,       // altura / largura do vídeo (9:16 vertical = 16/9)
   topoVideoManual: 0,           // plano B: altura (px) do título acima do vídeo, só usada se o código não achar o <video>
 
-  // Quando o botão do vturb aparece (16:20), o contador "ao vivo" sobe para não ficar em cima dele
+  // Quando o botão do vturb aparece (19:37), o contador "ao vivo" sobe para não ficar em cima dele
   aoVivoSobe: {
-    em: 980,                    // segundo em que o botão aparece (16:20)
-    px: 100                     // quantos pixels o contador sobe (aumente se ainda tocar no botão)
+    em: 1177,                   // segundo em que o botão aparece (19:37)
+    px: 140                     // quantos pixels o contador sobe (aumente se ainda tocar no botão)
   },
 
   aoVivoInicio: 112,
@@ -407,7 +407,7 @@ const CONTADORES = {
     nomes: ['Rafaela', 'Juliana', 'Camila', 'Fernanda', 'Mariana', 'Patrícia', 'Bruna', 'Aline',
             'Larissa', 'Bianca', 'Vanessa', 'Carla', 'Gabriel', 'Lucas', 'Rodrigo', 'Thiago',
             'Marcos', 'Felipe', 'Pedro', 'Diego'],
-    inicio: 980,            // segundo do vídeo em que começam (16:20, junto com o pitch)
+    inicio: 1177,           // segundo do vídeo em que começam (19:37, junto com o pitch)
     duracao: 4500,          // tempo que cada notificação fica na tela (ms)
     intervaloMin: 13000,    // intervalo mínimo entre notificações (ms)
     intervaloMax: 23000     // intervalo máximo entre notificações (ms)
@@ -415,7 +415,7 @@ const CONTADORES = {
 
   backredirect: {
     ativo: false,           // desativado por enquanto (troque para true para reativar)
-    inicio: null,           // segundo do vídeo a partir do qual vale (null = início do pitch, 16:20). Para testar, use 0
+    inicio: null,           // segundo do vídeo a partir do qual vale (null = início do pitch, 19:37). Para testar, use 0
     urlDesconto: 'https://pay.hub.la/5C8PjYZu12WJtPH2g7pQ'   // checkout com os R$ 100 de desconto
   }
 };
