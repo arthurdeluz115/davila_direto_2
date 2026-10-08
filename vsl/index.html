@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=3190735247789368&ev=PageView&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/players/6ac6bb327d2a6b90e1cab22d/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/ab-test/6a3e063319ad0024febe808e/player.js" as="script">
 <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
 <link rel="dns-prefetch" href="https://cdn.converteai.net">
 <link rel="dns-prefetch" href="https://scripts.converteai.net">
@@ -360,7 +360,7 @@ body{
   </div>
 
   <div class="vsl-player">
-    <vturb-smartplayer id="vid-6ac6bb327d2a6b90e1cab22d" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+    <vturb-smartplayer id="ab-6a3e063319ad0024febe808e" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
 
     <div class="ao-vivo" aria-live="off">
       <span class="ao-vivo-ponto" aria-hidden="true"></span>
@@ -390,14 +390,12 @@ body{
 
 <script>
 
-// O id do player é lido do elemento <vturb-smartplayer> da página:
-// para trocar o vídeo, basta substituir esse elemento pelo novo embed do vturb.
-const PLAYER_EL = document.querySelector('vturb-smartplayer');
-const PLAYER_ID = PLAYER_EL ? PLAYER_EL.id.replace('vid-', '') : '';
-
+// Player do vturb em teste A/B: o script fica em /ab-test/<id>/player.js
+// (diferente do player comum, que fica em /players/<id>/v4/player.js).
+// Para trocar o vídeo, substitua o <vturb-smartplayer> acima e a URL abaixo pelo novo embed.
 const CONFIG = {
   checkoutUrl: 'https://app.ephra.io/checkout/5do1xf2',
-  vslPlayerUrl: 'https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/players/' + PLAYER_ID + '/v4/player.js'
+  vslPlayerUrl: 'https://scripts.converteai.net/53782065-dd54-4ed0-847c-3897f660f267/ab-test/6a3e063319ad0024febe808e/player.js'
 };
 
 // Data de hoje no label acima do vídeo (ex.: " (07/10)")
