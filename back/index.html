@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#121212">
 <meta name="robots" content="noindex, nofollow">
-<title>Cupom Liberado | Máquina Geradora de Dólar</title>
+<title>Condição Especial | BranDollar Start</title>
 
-<!-- Meta Pixel Code — TROCAR PELO PIXEL DO DAVILA -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,17 +17,17 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'PIXEL_ID_DAVILA');
+fbq('init', '3190735247789368');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=PIXEL_ID_DAVILA&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=3190735247789368&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<!-- TrackHunter — TROCAR PELO ID DO DAVILA -->
+<!-- TrackHunter -->
 <script>
-  window.thPixelId = "TRACKHUNTER_ID_DAVILA";
+  window.thPixelId = "UyCophGTd3WVGcDW6m0e";
   var a = document.createElement("script");
   a.setAttribute("async", "");
   a.setAttribute("defer", "");
@@ -37,21 +37,21 @@ src="https://www.facebook.com/tr?id=PIXEL_ID_DAVILA&ev=PageView&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --preto:#000000;
-  --card:#0B0B0B;
-  --linha:#1F2A1F;
-  --verde:#00E02B;
-  --verde-escuro:#00A81F;
-  --amarelo:#EAB308;
-  --menta:#BBF7D0;
-  --vermelho:#DC2626;
-  --texto:#F3F4F6;
-  --suave:#9CA3AF;
-  --raio:20px;
+  --fundo:#121212;
+  --card:#1B1B1B;
+  --card-2:#222222;
+  --linha:#2C2C2C;
+  --texto:#F5F5F5;
+  --suave:#9A9A9A;
+  --ouro:#D4AF61;
+  --ouro-claro:#F1D894;
+  --ouro-escuro:#9C7A3C;
+  --ouro-grad:linear-gradient(135deg,#F1D894 0%,#D4AF61 45%,#A9823F 100%);
+  --raio:14px;
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
@@ -60,155 +60,206 @@ html{ scroll-behavior:smooth; overflow-x:hidden; }
 body{
   margin:0;
   overflow-x:hidden;
-  background:var(--preto);
+  background:var(--fundo);
   color:var(--texto);
-  font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  line-height:1.5;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
 img{ max-width:100%; height:auto; display:block; }
 h1,h2,h3,p{ margin:0; }
 
-.container{ width:100%; max-width:880px; margin:0 auto; padding:0 16px; }
-.verde{ color:var(--verde); }
-.vermelho{ color:var(--vermelho); }
-
-/* ---------- Barras do topo ---------- */
-.topo{ padding-top:24px; display:grid; gap:12px; }
-.barra{
-  padding:18px 20px;
-  border-radius:var(--raio);
-  border:2px solid rgba(255,255,255,.2);
-  text-align:center;
-  font-weight:800;
-  font-size:20px;
-  line-height:1.25;
-  color:#000;
+.container{ width:100%; max-width:720px; margin:0 auto; padding:0 16px; }
+.ouro{
+  background:var(--ouro-grad);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
-.barra--amarela{ background:var(--amarelo); box-shadow:0 0 24px rgba(234,179,8,.3); }
-.barra--menta{ background:var(--menta); text-transform:uppercase; font-weight:900; box-shadow:0 0 24px rgba(187,247,208,.25); }
+
+/* ---------- Topo ---------- */
+.topo{ padding-top:20px; display:grid; gap:10px; }
+.aviso{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 16px;
+  border-radius:var(--raio);
+  background:var(--card);
+  border:1px solid var(--linha);
+  text-align:center;
+  font-weight:700;
+  font-size:16px;
+  line-height:1.3;
+}
+.aviso-ponto{
+  flex:0 0 auto;
+  width:9px; height:9px;
+  border-radius:50%;
+  background:var(--ouro);
+  box-shadow:0 0 0 0 rgba(212,175,97,.6);
+  animation:pulso 1.6s ease-out infinite;
+}
+@keyframes pulso{
+  0%{ box-shadow:0 0 0 0 rgba(212,175,97,.6); }
+  100%{ box-shadow:0 0 0 10px rgba(212,175,97,0); }
+}
+.marca{
+  text-align:center;
+  font-family:'Cinzel',Georgia,serif;
+  font-weight:700;
+  font-size:30px;
+  letter-spacing:.06em;
+  line-height:1.1;
+  padding:18px 0 4px;
+}
+.marca small{
+  display:block;
+  margin-top:4px;
+  font-size:14px;
+  letter-spacing:.42em;
+  color:var(--suave);
+  -webkit-text-fill-color:var(--suave);
+}
 
 /* ---------- Seções ---------- */
-section{ padding:44px 0; }
+section{ padding:36px 0; }
 .titulo{
   font-size:26px;
   line-height:1.2;
   font-weight:800;
   text-align:center;
+  letter-spacing:-.01em;
 }
-.titulo--grande{ font-size:30px; font-weight:900; }
-.texto{ font-size:18px; color:#D1D5DB; text-align:center; }
+.texto{ font-size:17px; color:#C9C9C9; text-align:center; }
 .texto strong{ color:#fff; }
-.pilha{ display:grid; gap:20px; }
-.pilha--grande{ gap:32px; }
+.pilha{ display:grid; gap:18px; }
+.pilha--grande{ gap:28px; }
+.centro{ display:flex; justify-content:center; }
 
-/* ---------- Cartões ---------- */
 .cartao{
   background:var(--card);
   border:1px solid var(--linha);
-  border-radius:28px;
-  padding:32px 20px;
+  border-radius:20px;
+  padding:28px 20px;
 }
-.colunas{ display:grid; gap:20px; text-align:left; }
-.colunas p{ color:#D1D5DB; font-size:16px; }
+.colunas{ display:grid; gap:12px; }
+.colunas p{
+  padding:14px 16px;
+  border-radius:12px;
+  background:var(--card-2);
+  border:1px solid var(--linha);
+  color:#C9C9C9;
+  font-size:15px;
+  text-align:left;
+}
 .etiqueta{
-  color:var(--verde);
-  font-weight:900;
+  color:var(--ouro);
+  font-weight:800;
   text-transform:uppercase;
+  letter-spacing:.12em;
   text-align:center;
-  font-size:20px;
+  font-size:14px;
 }
 
 .faixa{
-  padding:16px 20px;
-  border-radius:14px;
-  background:#DBEAFE;
-  color:#000;
-  text-align:center;
-  font-weight:800;
-  font-size:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
 }
-.faixa--verde{ background:var(--verde); }
-
-.selo{
-  display:inline-block;
-  margin:0 auto;
-  padding:12px 22px;
+.faixa div{
+  padding:12px 8px;
   border-radius:12px;
-  background:var(--amarelo);
-  color:#000;
-  font-weight:900;
-  font-size:20px;
-  text-transform:uppercase;
+  background:var(--card);
+  border:1px solid var(--linha);
   text-align:center;
+  font-size:13px;
+  font-weight:600;
+  color:#C9C9C9;
+  line-height:1.3;
 }
-.centro{ display:flex; justify-content:center; }
+.faixa b{ display:block; font-size:15px; color:var(--ouro-claro); margin-bottom:2px; }
 
-/* ---------- O que você leva ---------- */
-.lista{ list-style:none; margin:0; padding:0; display:grid; gap:18px; }
+/* ---------- Lista ---------- */
+.lista{ list-style:none; margin:0; padding:0; display:grid; gap:16px; }
 .lista li{
   position:relative;
-  padding-left:44px;
-  font-size:17px;
-  line-height:1.4;
-  color:#D1D5DB;
+  padding-left:40px;
+  font-size:16px;
+  line-height:1.45;
+  color:#C9C9C9;
 }
 .lista li strong{ color:#fff; }
 .lista li::before{
   content:"";
   position:absolute;
-  left:0; top:1px;
-  width:30px; height:30px;
+  left:0; top:0;
+  width:26px; height:26px;
   border-radius:50%;
-  background:var(--verde) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/18px no-repeat;
+  background:var(--ouro-grad);
+  -webkit-mask:none;
+}
+.lista li::after{
+  content:"";
+  position:absolute;
+  left:0; top:0;
+  width:26px; height:26px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23121212' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4L18 8'/%3E%3C/svg%3E") center/16px no-repeat;
 }
 
-.passos{ list-style:none; margin:0; padding:0; display:grid; gap:14px; }
+.passos{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
 .passos li{
   display:flex;
   align-items:center;
-  gap:16px;
-  padding:16px;
+  gap:14px;
+  padding:14px;
   background:var(--card);
   border:1px solid var(--linha);
-  border-radius:20px;
+  border-radius:var(--raio);
 }
-.passos p{ font-size:16px; line-height:1.4; color:#D1D5DB; }
+.passos p{ font-size:15px; line-height:1.4; color:#C9C9C9; }
 .passos p strong{ color:#fff; }
 .passo-num{
   flex:0 0 auto;
-  width:42px; height:42px;
+  width:36px; height:36px;
   display:flex; align-items:center; justify-content:center;
-  border-radius:50%;
-  background:var(--verde);
-  color:#000;
-  font-weight:900;
-  font-size:20px;
+  border-radius:10px;
+  border:1px solid var(--ouro-escuro);
+  color:var(--ouro-claro);
+  font-weight:800;
+  font-size:16px;
 }
 
 /* ---------- Botão ---------- */
 .botao{
-  display:inline-block;
+  display:block;
   width:100%;
-  max-width:560px;
-  padding:22px 20px;
-  border-radius:18px;
-  border-bottom:7px solid var(--verde-escuro);
-  background:var(--verde);
-  color:#000;
-  font-weight:900;
-  font-size:20px;
+  max-width:520px;
+  padding:20px 18px;
+  border-radius:var(--raio);
+  background:var(--ouro-grad);
+  color:#121212;
+  font-weight:800;
+  font-size:18px;
   line-height:1.2;
   text-align:center;
   text-decoration:none;
   text-transform:uppercase;
-  box-shadow:0 18px 46px rgba(0,224,43,.28);
-  animation:pulsa 1.2s ease-in-out infinite;
+  letter-spacing:.02em;
+  box-shadow:0 14px 40px rgba(212,175,97,.25);
+  animation:respira 1.6s ease-in-out infinite;
 }
-.botao:focus-visible{ outline:3px solid #fff; outline-offset:4px; }
-@keyframes pulsa{
+.botao:focus-visible{ outline:2px solid #fff; outline-offset:4px; }
+@keyframes respira{
   0%,100%{ transform:scale(1); }
-  50%{ transform:scale(1.04); }
+  50%{ transform:scale(1.03); }
+}
+.seguro{
+  margin-top:10px;
+  text-align:center;
+  font-size:13px;
+  color:var(--suave);
 }
 
 /* ---------- Garantia ---------- */
@@ -216,69 +267,85 @@ section{ padding:44px 0; }
   text-align:center;
   background:var(--card);
   border:1px solid var(--linha);
-  border-radius:36px;
-  padding:36px 20px;
+  border-radius:24px;
+  padding:32px 20px;
   display:grid;
-  gap:24px;
+  gap:20px;
   justify-items:center;
 }
-.garantia h2{ font-size:30px; line-height:1.1; font-weight:900; text-transform:uppercase; }
-.garantia .destaque{ font-size:28px; line-height:1.15; font-weight:900; text-transform:uppercase; }
+.garantia h2{ font-size:26px; line-height:1.15; font-weight:800; text-transform:uppercase; }
+.garantia .destaque{ font-size:22px; line-height:1.2; font-weight:800; text-transform:uppercase; }
+.selo-garantia{ width:100%; max-width:200px; margin:0 auto; }
 
-/* ---------- Preço ---------- */
-.preco{ text-align:center; display:grid; gap:10px; }
-.preco .de{ color:var(--vermelho); font-size:26px; font-weight:700; text-decoration:line-through; opacity:.6; }
-.preco .por{ color:var(--suave); font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; }
-.preco .valor{ color:#22C55E; font-size:clamp(38px,11.5vw,64px); line-height:1; font-weight:900; white-space:nowrap; }
-.preco .nota{ color:var(--suave); font-size:15px; }
+/* ---------- Preço / resumo da oferta ---------- */
+.oferta{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:16px;
+  border-radius:var(--raio);
+  background:var(--card);
+  border:1px solid var(--linha);
+}
+.oferta-logo{
+  flex:0 0 auto;
+  width:68px; height:68px;
+  border-radius:10px;
+  background:#0B0B0B;
+  border:1px solid var(--linha);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-family:'Cinzel',Georgia,serif;
+  font-weight:700;
+  font-size:10px;
+  line-height:1.15;
+  letter-spacing:.04em;
+}
+.oferta-nome{ font-size:17px; font-weight:700; color:#fff; }
+.oferta-sub{ font-size:14px; color:var(--suave); }
+
+.preco{ text-align:center; display:grid; gap:6px; }
+.preco .por{ color:var(--suave); font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:.14em; }
+.preco .valor{ font-size:clamp(42px,12vw,72px); line-height:1; font-weight:900; white-space:nowrap; letter-spacing:-.02em; }
 
 /* ---------- Fotos ---------- */
 .foto{
   width:100%;
   max-width:400px;
-  height:auto;
   margin:0 auto;
-  border-radius:var(--raio);
+  border-radius:18px;
   border:1px solid var(--linha);
 }
-.fotos-duplas{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  max-width:400px;
-  margin:0 auto;
-}
-.fotos-duplas .foto{ max-width:none; }
-.garantia .selo-garantia{ width:100%; max-width:240px; height:auto; margin:0 auto; }
 
-main{ padding-bottom:24px; }
+main{ padding-bottom:28px; }
 
 @media (min-width:720px){
-  .barra{ font-size:24px; }
-  .titulo{ font-size:36px; }
-  .titulo--grande{ font-size:44px; }
-  .texto{ font-size:20px; }
+  .aviso{ font-size:18px; }
+  .marca{ font-size:40px; }
+  .titulo{ font-size:34px; }
+  .texto{ font-size:19px; }
   .colunas{ grid-template-columns:repeat(3,1fr); }
-  .lista li{ font-size:19px; }
-  .passos p{ font-size:18px; }
-  .botao{ font-size:26px; padding:26px 28px; }
-  .garantia h2{ font-size:44px; }
-  .garantia .destaque{ font-size:40px; }
-  .preco .valor{ font-size:92px; }
+  .lista li{ font-size:17px; }
+  .botao{ font-size:22px; padding:24px; }
+  .garantia h2{ font-size:36px; }
+  .garantia .destaque{ font-size:30px; }
+  .faixa div{ font-size:14px; }
 }
 
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
-  .botao{ animation:none; }
+  .botao, .aviso-ponto{ animation:none; }
 }
 </style>
 </head>
 <body>
 
-<!-- ======= BARRAS DO TOPO ======= -->
+<!-- ======= TOPO ======= -->
 <div class="container topo">
-  <div class="barra barra--amarela">ESPERA! Antes de sair, você acabou de ganhar <span class="vermelho">R$ 100</span> de desconto!!!</div>
-  <div class="barra barra--menta">Cupom de R$100 OFF liberado</div>
+  <div class="aviso"><span class="aviso-ponto" aria-hidden="true"></span><span>Espera! Antes de sair, liberei uma condição especial para você</span></div>
+  <div class="marca ouro">BRANDOLLAR<small>START</small></div>
 </div>
 
 <main class="container">
@@ -286,30 +353,30 @@ main{ padding-bottom:24px; }
   <!-- ======= ABERTURA ======= -->
   <section class="pilha pilha--grande">
     <h1 class="titulo">
-      O Matheus Davila liberou uma condição especial na
-      <span class="verde">Máquina Geradora de Dólar</span>
-      só para quem chegou até aqui
+      Se agora não é o momento para o programa completo,
+      comece pelo <span class="ouro">BranDollar Start</span> por menos de
+      <span class="ouro">R$ 21 por mês</span>
     </h1>
 
     <img class="foto" src="assets/img-01-davila-topo.webp" width="800" height="1067" alt="Matheus Davila em Dubai" fetchpriority="high">
   </section>
 
-  <!-- ======= APRESENTAÇÃO DA OFERTA ======= -->
+  <!-- ======= APRESENTAÇÃO ======= -->
   <section>
     <div class="cartao pilha pilha--grande">
       <div class="pilha">
-        <p class="texto" style="font-size:22px;font-weight:700;color:#fff">
-          A <span class="verde">Máquina Geradora de Dólar</span> é o método que te mostra, na prática,
-          como começar a faturar em dólar vendendo produtos físicos nos Estados Unidos…
+        <p class="texto" style="font-size:20px;font-weight:700;color:#fff">
+          O <span class="ouro">BranDollar Start</span> é a porta de entrada para você começar
+          a faturar em dólar vendendo produtos físicos nos Estados Unidos.
         </p>
         <p class="texto">
-          Com um passo a passo direto ao ponto para você montar a sua operação no maior mercado
-          consumidor do mundo, <strong>sem sair do Brasil</strong>.
+          É o primeiro passo, direto ao ponto, para você entender como funciona esse mercado
+          e dar a largada na sua operação <strong>sem sair do Brasil</strong>.
         </p>
       </div>
 
       <div class="pilha">
-        <h2 class="titulo" style="font-style:italic">E o melhor…</h2>
+        <h2 class="titulo" style="font-size:24px">E o melhor…</h2>
         <p class="texto">
           Você não precisa falar inglês nem ter experiência no digital. Se você sabe usar o
           celular e seguir um passo a passo, <strong>você já pode começar</strong>.
@@ -319,59 +386,56 @@ main{ padding-bottom:24px; }
       <div class="pilha">
         <h3 class="etiqueta">Isso é para você se:</h3>
         <div class="colunas">
-          <p>Você está cansado de trabalhar muito e ver o salário em real acabar antes mesmo do mês terminar…</p>
-          <p>Quer ganhar na moeda mais forte do mundo e ver cada venda valer quase 6 vezes mais quando converte para o real…</p>
-          <p>Quer construir uma renda que te dê segurança para cuidar da sua família, viajar e parar de depender de patrão…</p>
+          <p>Você está cansado de trabalhar muito e ver o salário em real acabar antes do fim do mês…</p>
+          <p>Quer ganhar na moeda mais forte do mundo e ver cada venda valer muito mais quando converte para o real…</p>
+          <p>Quer começar com pouco, sem arriscar alto, e ir crescendo no seu ritmo…</p>
         </div>
       </div>
-
-      <p class="titulo" style="font-style:italic;font-size:24px">
-        Então, a Máquina Geradora de Dólar foi feita para você!!!
-      </p>
     </div>
   </section>
 
-  <!-- ======= FAIXA DE PROVA (ajustar os números reais do Davila) ======= -->
-  <div class="faixa">+[X] alunos vendendo nos EUA • [X] mil no YouTube • [X] mil no Instagram</div>
+  <!-- ======= FAIXA DE DESTAQUES ======= -->
+  <div class="faixa">
+    <div><b>Mercado</b>americano</div>
+    <div><b>Receba</b>em dólar</div>
+    <div><b>Do zero</b>sem inglês</div>
+  </div>
 
   <!-- ======= MENSAGEM PESSOAL ======= -->
   <section class="pilha pilha--grande">
-    <h2 class="titulo" style="font-style:italic">E não para por aí.</h2>
+    <h2 class="titulo">Eu não quero que você saia daqui de mãos vazias.</h2>
 
     <img class="foto" src="assets/img-02-davila.webp" width="800" height="1422" alt="Matheus Davila em Londres" loading="lazy">
 
     <div class="pilha">
       <p class="texto">
-        O meu objetivo é <strong>colocar o máximo de brasileiros possível para receber em dólar</strong>,
-        vendendo para o mercado americano.
+        Eu sei que nem todo mundo está pronto para entrar no programa completo hoje.
+        Por isso criei o <strong>BranDollar Start</strong>: uma forma acessível de você dar
+        o primeiro passo para receber em dólar.
       </p>
       <p class="texto">
-        Eu não quero que você feche essa página e continue no mesmo lugar. Quero ver você dando
-        o primeiro passo hoje, com o mesmo caminho que eu e meus alunos já seguimos.
+        É o mesmo caminho que eu sigo, só que no formato certo para quem está começando agora.
       </p>
 
       <img class="foto" src="assets/img-03-davila.webp" width="800" height="1422" alt="Matheus Davila no deserto" loading="lazy">
-      <p class="texto">
-        Por isso, liberei <strong>R$ 100 de desconto</strong> exclusivo para você que estava
-        prestes a sair da página.
-      </p>
-      <p class="texto" style="font-size:22px;font-weight:700;color:var(--verde)">
-        Esse cupom só vale aqui, nesta página, agora.
+
+      <p class="texto" style="font-size:20px;font-weight:700;color:var(--ouro-claro)">
+        Essa condição só aparece aqui, nesta página, agora.
       </p>
     </div>
   </section>
 
   <!-- ======= O QUE VOCÊ LEVA ======= -->
   <section class="pilha pilha--grande">
-    <div class="centro"><div class="selo">Veja o que você leva ao garantir hoje:</div></div>
+    <h2 class="etiqueta" style="font-size:16px">O que você leva com o BranDollar Start</h2>
 
-    <div class="cartao pilha">
+    <div class="cartao">
       <ul class="lista">
-        <li><strong>O método completo da Máquina Geradora de Dólar</strong>, do zero até a sua primeira venda nos EUA</li>
-        <li><strong>Como escolher os produtos físicos certos</strong> para vender para o consumidor americano</li>
-        <li><strong>Como receber seus pagamentos em dólar</strong> e trazer o dinheiro para o Brasil</li>
+        <li><strong>O passo a passo inicial</strong> para entender como vender produtos físicos nos EUA</li>
+        <li><strong>Como pensar na sua marca</strong> para o consumidor americano desde o começo</li>
+        <li><strong>Como receber em dólar</strong> e trazer o dinheiro para o Brasil</li>
         <li><strong>Aulas na ordem certa</strong>, para você saber sempre qual é o próximo passo</li>
-        <li><strong>Acesso pelo celular ou computador</strong>, no seu ritmo, de onde você estiver</li>
+        <li><strong>Acesso pelo celular ou computador</strong>, no seu ritmo</li>
         <li><strong>7 dias de garantia</strong>, para você entrar com tranquilidade</li>
       </ul>
     </div>
@@ -381,7 +445,7 @@ main{ padding-bottom:24px; }
     <ol class="passos">
       <li>
         <span class="passo-num" aria-hidden="true">1</span>
-        <p><strong>Você garante a vaga</strong> com o cupom de R$ 100 de desconto, nesta página.</p>
+        <p><strong>Você garante o BranDollar Start</strong> por 12x R$ 20,02, nesta página.</p>
       </li>
       <li>
         <span class="passo-num" aria-hidden="true">2</span>
@@ -389,50 +453,58 @@ main{ padding-bottom:24px; }
       </li>
       <li>
         <span class="passo-num" aria-hidden="true">3</span>
-        <p><strong>Você começa hoje</strong>, montando a sua operação aula por aula.</p>
+        <p><strong>Você começa hoje</strong>, aula por aula.</p>
       </li>
     </ol>
   </section>
 
   <!-- ======= CTA 1 ======= -->
-  <section class="centro">
-    <a class="botao" data-checkout href="LINK_CHECKOUT_DAVILA">Quero garantir meu desconto</a>
+  <section>
+    <div class="centro"><a class="botao" data-checkout href="LINK_CHECKOUT_BRANDOLLAR">Quero começar com o BranDollar Start</a></div>
+    <p class="seguro">Pagamento seguro • Cartão, Pix ou múltiplos cartões</p>
   </section>
 
   <!-- ======= GARANTIA ======= -->
   <section>
     <div class="garantia">
-      <h2>Tudo isso com risco zero!</h2>
+      <h2>Tudo isso com <span class="ouro">risco zero</span></h2>
 
       <img class="selo-garantia" src="assets/img-selo-garantia.webp" width="480" height="480" alt="Selo de garantia de 7 dias" loading="lazy">
 
-      <p class="texto" style="max-width:640px">
+      <p class="texto" style="max-width:560px">
         Você tem <strong>7 dias de garantia</strong>. Se entrar, assistir e sentir que não é o
         seu momento, é só pedir o reembolso dentro desse prazo.
       </p>
-      <p class="destaque">Eu devolvo 100% do seu dinheiro!!</p>
+      <p class="destaque">Eu devolvo 100% do seu dinheiro!</p>
     </div>
   </section>
 
-  <!-- ======= RECAPITULAÇÃO + PREÇO (ajustar valores) ======= -->
+  <!-- ======= PREÇO ======= -->
   <section class="pilha pilha--grande">
     <p class="texto">
-      Não deixa o dólar passar por causa do preço. Somente nesta página você garante a
-      Máquina Geradora de Dólar com <strong>R$ 100 de desconto</strong>:
+      Não deixa o dólar passar. Comece hoje com o <strong>BranDollar Start</strong>:
     </p>
 
-    <div class="preco">
-      <p class="de">de R$ [PREÇO CHEIO]</p>
-      <p class="por">por</p>
-      <p class="valor">12x R$ [PARCELA]</p>
+    <div class="oferta">
+      <div class="oferta-logo"><span class="ouro">BRANDOLLAR<br>START</span></div>
+      <div>
+        <p class="oferta-nome">BranDollar Start</p>
+        <p class="oferta-sub">Acesso imediato • 7 dias de garantia</p>
+      </div>
     </div>
 
-    <p class="texto" style="font-size:22px;font-weight:800;color:#fff;text-transform:uppercase">
-      Clica no botão abaixo e comece a faturar em dólar com desconto agora!
+    <div class="preco">
+      <p class="por">por apenas</p>
+      <p class="valor ouro">12x R$ 20,02</p>
+    </div>
+
+    <p class="texto" style="font-size:19px;font-weight:800;color:#fff;text-transform:uppercase">
+      Clica no botão abaixo e comece agora!
     </p>
 
-    <div class="centro">
-      <a class="botao" data-checkout href="LINK_CHECKOUT_DAVILA">Garantir minha vaga com R$100 OFF</a>
+    <div>
+      <div class="centro"><a class="botao" data-checkout href="LINK_CHECKOUT_BRANDOLLAR">Garantir o BranDollar Start</a></div>
+      <p class="seguro">Pagamento seguro • Cartão, Pix ou múltiplos cartões</p>
     </div>
   </section>
 
@@ -446,7 +518,7 @@ main{ padding-bottom:24px; }
 
   document.querySelectorAll('a[data-checkout]').forEach(function(a){
     var url;
-    try{ url = new URL(a.href); } catch(e){ return; }
+    try{ url = new URL(a.href, window.location.href); } catch(e){ return; }
     params.forEach(function(valor, chave){
       if (chaves.test(chave)) url.searchParams.set(chave, valor);
     });
