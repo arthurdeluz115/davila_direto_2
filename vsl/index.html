@@ -449,19 +449,19 @@ window.irParaCheckout = irParaCheckout;
  * ============================================================ */
 const CONTADORES = {
   debug: false,                 // true = mostra logs no console para testar
-  duracaoVideo: 1539,           // duração do vídeo: 25:39 (25*60 + 39)
-  pitchInicio: 1200,            // pitch começa em 20:00 (20*60)
+  duracaoVideo: 1501,           // duração do vídeo: 25:01 (25*60 + 1), igual em todas as variantes do A/B
+  pitchInicio: 1177,            // pitch começa em 19:37 (19*60 + 37)
 
-  // Cartão de vagas sobre o vídeo (tela preta do fim: 24:39 -> 25:39)
-  vagasAparece: 1479,           // aparece em 24:39 (24*60 + 39)
-  vagasTermina: null,           // null = chega a 04 no fim do vídeo (25:39)
+  // Cartão de vagas sobre o vídeo (tela preta do fim: 24:01 -> 25:01)
+  vagasAparece: 1441,           // aparece em 24:01 (24*60 + 1)
+  vagasTermina: null,           // null = chega a 04 no fim do vídeo (25:01)
 
   proporcaoVideo: 16 / 9,       // altura / largura do vídeo (9:16 vertical = 16/9)
   topoVideoManual: 0,           // plano B: altura (px) do título acima do vídeo, só usada se o código não achar o <video>
 
-  // Quando o botão do vturb aparece (20:00), o contador "ao vivo" sobe para não ficar em cima dele
+  // Quando o botão do vturb aparece (19:37), o contador "ao vivo" sobe para não ficar em cima dele
   aoVivoSobe: {
-    em: 1200,                   // segundo em que o botão aparece (20:00)
+    em: 1177,                   // segundo em que o botão aparece (19:37)
     px: 140                     // quantos pixels o contador sobe (aumente se ainda tocar no botão)
   },
 
@@ -475,7 +475,7 @@ const CONTADORES = {
     nomes: ['Rafaela', 'Juliana', 'Camila', 'Fernanda', 'Mariana', 'Patrícia', 'Bruna', 'Aline',
             'Larissa', 'Bianca', 'Vanessa', 'Carla', 'Gabriel', 'Lucas', 'Rodrigo', 'Thiago',
             'Marcos', 'Felipe', 'Pedro', 'Diego'],
-    inicio: 1200,           // segundo do vídeo em que começam (20:00, junto com o pitch)
+    inicio: 1177,           // segundo do vídeo em que começam (19:37, junto com o pitch)
     duracao: 4500,          // tempo que cada notificação fica na tela (ms)
     intervaloMin: 13000,    // intervalo mínimo entre notificações (ms)
     intervaloMax: 23000     // intervalo máximo entre notificações (ms)
